@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-glovo-yellow: #FFC244;
+  --color-glovo-green: #00A082;
+  --color-glovo-black: #1D1D1D;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-glovo-black antialiased;
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 194, 68, 0.3);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 194, 68, 0.5);
+}
+
+@keyframes flow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.animate-flow {
+  background-size: 200% 200%;
+  animation: flow 2s linear infinite;
+}
+
+

@@ -1,0 +1,6 @@
+{
+  "name": "Glovo Ops Dashboard",
+  "description": "Operational dashboard for real-time delivery incidents and daily performance summaries.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
